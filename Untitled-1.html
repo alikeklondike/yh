@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereal Pixels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        .glow {
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Навигация -->
+    <nav class="flex justify-between items-center p-6 bg-gray-800 shadow-md">
+        <h1 class="text-2xl text-pink-500 glow">ETHEREAL PIXELS</h1>
+        <ul class="flex space-x-6 text-gray-300">
+            <li><a href="#" class="hover:text-pink-500">Home</a></li>
+            <li><a href="#" class="hover:text-pink-500">Gallery</a></li>
+            <li><a href="#" class="hover:text-pink-500">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Главный экран -->
+    <header class="relative">
+        <img src="" alt="Background" class="w-full h-96 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-center">
+            <h2 class="text-white text-3xl md:text-5xl glow fade-in">PIXELS MAKE MEMORIES.</h2>
+        </div>
+    </header>
+
+    <!-- Блоки -->
+    <section class="flex flex-col md:flex-row items-center mt-12 mx-6 md:mx-24">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-full md:w-1/2">
+            <h3 class="text-xl font-bold text-pink-500">RETRO ART</h3>
+            <p class="text-gray-400 mt-2">Pixelated nostalgia in every frame.</p>
+        </div>
+        <div class="bg-pink-600 text-white p-6 rounded-lg shadow-lg w-full md:w-1/2 mt-6 md:mt-0">
+            <h3 class="text-xl font-bold">NEON FUTURE</h3>
+            <p class="mt-2">Glowing pixels in a cyber world.</p>
+        </div>
+    </section>
+
+    <!-- Команда -->
+    <section class="mt-12 mx-6 md:mx-24">
+        <h3 class="text-2xl font-bold text-center glow">MEET THE PIXEL MASTERS</h3>
+        <div class="flex flex-col md:flex-row justify-center items-center mt-6 space-y-6 md:space-y-0 md:space-x-6">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-64 text-center">
+                <img src="https://via.placeholder.com/100" class="rounded-full mx-auto" alt="Person 1">
+                <h4 class="text-lg font-bold text-white mt-2">Pixel Wizard</h4>
+                <p class="text-gray-400">Art Director</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-64 text-center">
+                <img src="https://via.placeholder.com/100" class="rounded-full mx-auto" alt="Person 2">
+                <h4 class="text-lg font-bold text-white mt-2">Code Ninja</h4>
+                <p class="text-gray-400">Lead Developer</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
